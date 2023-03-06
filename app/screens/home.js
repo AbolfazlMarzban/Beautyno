@@ -29,17 +29,20 @@ function home(props) {
                         } else if(route.name == "Favourites"){
                             iconName = focused ? "heart" : "heart-outline"
                         }
-                        return <Ionic name={iconName} size={size} colour={color} />
-                    }
+                        return <Ionic name={iconName} size={size} color={colors.pink} />
+                    },
+                    tabBarStyle: {
+                        backgroundColor: '#000',
+                      },
                 })}
                 tabBarOptions={{
-                    activeTintColor: colors.purple,
-                    inactiveTintColor:colors.purple,
-                    showLabel: true,
-                    style: {
-                        backgroundColor: '#f9f9f9',
-                        height: 60,
-                    },
+                    activeTintColor: colors.white,
+                    inactiveTintColor:colors.white,
+                    showLabel: false,
+                    // style: {
+                    //     backgroundColor: '#f9f9f9',
+                    //     height: 60,
+                    // },
                 }
                 }
             >
