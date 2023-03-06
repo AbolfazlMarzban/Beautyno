@@ -13,13 +13,14 @@ const screens = {
     Home : {
         screen : Home,
         navigationOptions: {
-            title: 'بازگشت',
-            headerTintColor: '#fff',
-            headerStyle : {backgroundColor: 'black', color: 'white'}
+            // title: 'بازگشت',
+            // headerTintColor: '#fff',
+            // headerStyle : {backgroundColor: 'black', color: 'white'}
+            header: null,
           }
     }
 }
 const HomeStack = createStackNavigator(screens)
 
 
-export default HomeStack
+export default createAppContainer(HomeStack)

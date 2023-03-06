@@ -34,8 +34,8 @@ function home(props) {
                 }
                 }
             >
-                <Tab.Screen name="Home" component={homeScreen}></Tab.Screen>
-                <Tab.Screen name="Profile" component={profile}></Tab.Screen>
+                <Tab.Screen name="Home" component={homeScreen} options={{headerShown: false}}></Tab.Screen>
+                <Tab.Screen name="Profile" component={profile}  options={{headerShown: false}}></Tab.Screen>
             </Tab.Navigator>
         </NavigationContainer>
     );
