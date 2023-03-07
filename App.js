@@ -1,9 +1,28 @@
 import * as React from 'react';
 import Navigator from "./routes/homeStack"
+import { useFonts } from "expo-font";
+import AppLoading from "expo-app-loading";  
 
 
 
 export default function App() {
+  let [fontsLoaded] = useFonts({
+    'YekanBakh-Regular': require('./app/assets/fonts/YekanBakh-Regular.ttf')
+  })
+
+  if(!fontsLoaded){
+    return <AppLoading />;
+  }
+
+  const pressHandler = ()=>{
+    navigation.navigate('Home')
+    //another method
+    // navigation.push('Home')
+
+
+    //to go back to the last page 
+    //navigation.goBack()
+  }
   return (
     <Navigator />
   )
