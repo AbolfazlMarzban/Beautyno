@@ -2,14 +2,10 @@ import { createStackNavigator } from "react-navigation-stack"
 import { createAppContainer } from "react-navigation"
 import Login from '../app/screens/login'
 import Home from '../app/screens/home'
+import 'react-native-gesture-handler';
+
 
 const screens = {
-    Login:{
-        screen: Login,
-        navigationOptions: {
-            header: null,
-          }
-    },
     Home : {
         screen : Home,
         navigationOptions: {
@@ -18,7 +14,14 @@ const screens = {
             // headerStyle : {backgroundColor: 'black', color: 'white'}
             header: null,
           }
-    }
+    },
+    Login:{
+        screen: Login,
+        navigationOptions: {
+            header: null,
+          }
+    },
+
 }
 const HomeStack = createStackNavigator(screens)
 

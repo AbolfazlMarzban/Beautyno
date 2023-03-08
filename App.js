@@ -2,7 +2,7 @@ import * as React from 'react';
 import Navigator from "./routes/homeStack"
 import { useFonts } from "expo-font";
 import AppLoading from "expo-app-loading";  
-
+import 'react-native-gesture-handler';
 
 
 export default function App() {
@@ -24,7 +24,8 @@ export default function App() {
     //navigation.goBack()
   }
   return (
-    <Navigator />
+          <Navigator />
+
   )
 }
 

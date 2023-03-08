@@ -5,10 +5,12 @@ import {NavigationContainer} from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import homeScreen from './homeScreen';
 import profile from './profile';
-import search from './search';
+import search from './search';  
 import cart from './cart';
 import favourites from './favourites';
 import colors from '../config/colors';
+import 'react-native-gesture-handler';
+
 
 function home(props) {
     const Tab = createBottomTabNavigator()
