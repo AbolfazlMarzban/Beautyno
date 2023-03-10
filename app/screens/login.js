@@ -43,7 +43,7 @@ export default function login({navigation}) {
       ></TextInput>
       <TouchableOpacity style={styles.Button} onPress={pressHandler}>
         <Text style={{fontSize:23, textAlign: 'center', color: colors.white, fontFamily: 'YekanBakh-Regular'}}>ورود</Text>
-      </TouchableOpacity>
+      </TouchableOpacity>   
      
     </View>
   );
