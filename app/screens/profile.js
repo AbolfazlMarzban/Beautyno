@@ -1,12 +1,12 @@
 import React from 'react';
-import { View, Text } from 'react-native-web';
+import { View, Text, SafeAreaView } from 'react-native';
 
-function profile(props) {
+function Profile(props) {
     return (
-        <View>
+        <SafeAreaView>
           <Text>Profile</Text>  
-        </View>
+        </SafeAreaView>
     );
 }
 
-export default profile;
+export default Profile;

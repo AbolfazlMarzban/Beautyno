@@ -7,7 +7,7 @@ import Icon from "react-native-vector-icons/MaterialCommunityIcons"
 
 
 
-function homeScreen(props) {
+function HomeScreen(props) {
     
     // constructor(props) {
     //     super(props);
@@ -26,7 +26,7 @@ function homeScreen(props) {
             <View style={{marginBottom: 20}}>
                     <View style={styles.picBox}>
                         <View style={styles.profile}>
-                            <Image source={require('../assets/salon-logo.png')} resizeMode='contain' style={styles.profilePic}></Image>
+                            <Image source={require('../assets/background.png')} resizeMode='contain' style={styles.profilePic}></Image>
                         </View>
                         <View >
                             <Text style={styles.profileText}>اسم آرایشگاه</Text>
@@ -53,7 +53,7 @@ function homeScreen(props) {
                         
                         </TouchableOpacity>
                         <TouchableOpacity>
-                        <Icon name={'comment'} size={50} color={colors.blue}  style={{ textShadowOffset:{width:1, height:1},
+                        <Icon name={'comment-outline'} size={50} color={colors.blue}  style={{ textShadowOffset:{width:1, height:1},
                         textShadowColor: colors.blue,
                         shadowOpacity: 2,
                         elevation: 10,
@@ -68,7 +68,7 @@ function homeScreen(props) {
             <View style={{marginBottom: 20}}>
                     <View style={styles.picBox}>
                         <View style={styles.profile}>
-                            <Image source={require('../assets/salon-logo.png')} resizeMode='contain' style={styles.profilePic}></Image>
+                            <Image source={require('../assets/background.png')} resizeMode='contain' style={styles.profilePic}></Image>
                         </View>
                         <View >
                             <Text style={styles.profileText}>اسم آرایشگاه</Text>
@@ -95,7 +95,7 @@ function homeScreen(props) {
                         
                         </TouchableOpacity>
                         <TouchableOpacity>
-                        <Icon name={'comment'} size={50} color={colors.blue}  style={{ textShadowOffset:{width:1, height:1},
+                        <Icon name={'comment-outline'} size={50} color={colors.blue}  style={{ textShadowOffset:{width:1, height:1},
                         textShadowColor: colors.blue,
                         shadowOpacity: 2,
                         elevation: 10,
@@ -138,17 +138,17 @@ const styles = StyleSheet.create({
         shadowOffset: {width: 5, height: 1},
         shadowOpacity: 0.5,
         shadowRadius: 75,
-        shadowColor: colors.blue,
+        shadowColor: colors.purple,
         elevation: 15,
-        backgroundColor: colors.blue
+        backgroundColor: colors.purple
     },
     profilePic:{
         width: 80,
         height: 80,
         borderRadius: 150 / 2,
         overflow: "hidden",
-        borderWidth: 1,
-        borderColor: colors.blue,
+        borderWidth: 3,
+        borderColor: colors.yellow,
 
     },
     profileText:{
@@ -170,4 +170,4 @@ const styles = StyleSheet.create({
         fontSize: 15,
     }
 })
-export default homeScreen;
+export default HomeScreen;

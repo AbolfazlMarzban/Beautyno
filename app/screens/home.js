@@ -1,13 +1,12 @@
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native'
 import Ionic from "react-native-vector-icons/Ionicons"
 import {NavigationContainer} from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import homeScreen from './homeScreen';
-import profile from './profile';
-import search from './search';  
-import cart from './cart';
-import favourites from './favourites';
+import HomeScreen from './HomeScreen';
+import Profile from './Profile';
+import Search from './Search';  
+import Cart from './Cart';
+import Favourites from './Favourites';
 import colors from '../config/colors';
 import 'react-native-gesture-handler';
 
@@ -19,7 +18,7 @@ function home(props) {
             <Tab.Navigator 
                 screenOptions={({route}) => ({
                     tabBarIcon: ({focused, size, color}) => {
-                        let iconName;
+                        let iconName
                         if(route.name == "Home"){
                             iconName = focused ? "home" : "home-outline"
                         } else if (route.name == "Profile"){
@@ -35,35 +34,22 @@ function home(props) {
                     },
                     tabBarStyle: {
                         backgroundColor: '#000',
-                      },
+                      }
                 })}
                 tabBarOptions={{
                     activeTintColor: colors.white,
                     inactiveTintColor:colors.white,
-                    showLabel: false,
-                    // style: {
-                    //     backgroundColor: '#f9f9f9',
-                    //     height: 60,
-                    // },
+                    showLabel: false
                 }
                 }
             >
-                <Tab.Screen name="Home" component={homeScreen} options={{headerShown: false}}></Tab.Screen>
-                <Tab.Screen name="Search" component={search} options={{headerShown: false}}></Tab.Screen>
-                <Tab.Screen name="Cart" component={cart} options={{headerShown: false}}></Tab.Screen>
-                <Tab.Screen name="Favourites" component={favourites} options={{headerShown: false}}></Tab.Screen>
-                <Tab.Screen name="Profile" component={profile}  options={{headerShown: false}}></Tab.Screen>
+                <Tab.Screen name="Home" component={HomeScreen} options={{headerShown: false}}></Tab.Screen>
+                <Tab.Screen name="Search" component={Search} options={{headerShown: false}}></Tab.Screen>
+                <Tab.Screen name="Cart" component={Cart} options={{headerShown: false}}></Tab.Screen>
+                <Tab.Screen name="Favourites" component={Favourites} options={{headerShown: false}}></Tab.Screen>
+                <Tab.Screen name="Profile" component={Profile}  options={{headerShown: false}}></Tab.Screen>
             </Tab.Navigator>
         </NavigationContainer>
-    );
+    )
 }
-
-const styles = StyleSheet.create({
-Tab:{
-    backgroundColor: colors.black,
-    color: colors.black
-}
-})
-
-
 export default home;

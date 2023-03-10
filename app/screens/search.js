@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, Text } from 'react-native-web';
+import { View, Text } from 'react-native';
 
-function search(props) {
+function Search(props) {
     return (
         <View>
             <Text>Search</Text>
@@ -9,4 +9,4 @@ function search(props) {
     );
 }
 
-export default search;
+export default Search;

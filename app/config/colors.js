@@ -2,7 +2,7 @@
 var colors = {
     pink : "#fe2adf",
     blue : "#03fffc",
-    purple : "#c000c1",
+    purple : "#7f00ea",
     yellow: "#f4db03",
     black: "#000",
     white: "#fff"

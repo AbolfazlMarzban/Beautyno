@@ -6,6 +6,12 @@ import 'react-native-gesture-handler';
 
 
 const screens = {
+    Login:{
+        screen: Login,
+        navigationOptions: {
+            header: null,
+          }
+    },
     Home : {
         screen : Home,
         navigationOptions: {
@@ -15,12 +21,7 @@ const screens = {
             header: null,
           }
     },
-    Login:{
-        screen: Login,
-        navigationOptions: {
-            header: null,
-          }
-    },
+
 
 }
 const HomeStack = createStackNavigator(screens)

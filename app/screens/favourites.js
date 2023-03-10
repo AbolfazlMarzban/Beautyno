@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, Text } from 'react-native-web';
+import { View, Text } from 'react-native';
 
-function favourites(props) {
+function Favourites(props) {
     return (
        <View>
         <Text>Favourites</Text>
@@ -9,4 +9,4 @@ function favourites(props) {
     );
 }
 
-export default favourites;
+export default Favourites;
