@@ -20,7 +20,7 @@ export default function login({navigation}) {
     //another method
     // navigation.push('Home')
 
-
+  
     //to go back to the last page 
     //navigation.goBack()
   }
@@ -92,9 +92,8 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     padding: 10,
     borderRadius: 20,
-    shadowColor: colors.blue,
-    shadowOffset: {width: 2, height: 2},
-    shadowOpacity: 0.5,
+    shadowOffset: {width: 1, height: 1},
+    shadowOpacity: 0.75,
     shadowRadius: 20,
     shadowColor: colors.blue,
     elevation: 10,

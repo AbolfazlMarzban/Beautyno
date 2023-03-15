@@ -2,11 +2,11 @@ import React from 'react';
 import Ionic from "react-native-vector-icons/Ionicons"
 import {NavigationContainer} from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from './HomeScreen';
-import Profile from './Profile';
-import Search from './Search';  
-import Cart from './Cart';
-import Favourites from './Favourites';
+import HomeScreen from './homeScreen';
+import Profile from './profile';
+import Search from './search';  
+import Cart from './cart';
+import Favourites from './favourites';
 import colors from '../config/colors';
 import 'react-native-gesture-handler';
 
