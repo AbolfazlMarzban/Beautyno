@@ -73,11 +73,11 @@ const styles = StyleSheet.create({
     borderColor: colors.purple,
     borderRadius: 20,
     shadowColor: colors.purple,
-    shadowOffset: {width: 2, height: 2},
+    shadowOffset: {width: 1, height: 1},
     shadowOpacity: 0.75,
     shadowRadius: 20,
     shadowColor: colors.purple,
-    elevation: 30,
+    elevation: 20,
     backgroundColor: colors.purple,
     fontSize: 20,
     color: colors.white,
@@ -96,6 +96,6 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.75,
     shadowRadius: 20,
     shadowColor: colors.blue,
-    elevation: 10,
+    elevation: 8,
   }
 });

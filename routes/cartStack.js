@@ -5,7 +5,7 @@ import Cart from '../app/screens/cartScreen'
 import 'react-native-gesture-handler';
 
 
-const screens = {
+const screens = {   
     Cart : {
         screen : Cart,
         navigationOptions: {
