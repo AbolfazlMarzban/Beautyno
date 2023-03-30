@@ -14,7 +14,7 @@ export default function login({navigation}) {
   if(!fontsLoaded){
     return <AppLoading />;
   }
-
+  
   const pressHandler = ()=>{
     navigation.navigate('Home')
     //another method
