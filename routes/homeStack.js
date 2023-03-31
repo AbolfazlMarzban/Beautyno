@@ -2,7 +2,7 @@ import { createStackNavigator } from "react-navigation-stack"
 import { createAppContainer } from "react-navigation"
 import Login from '../app/screens/login'
 import Home from '../app/screens/home'
-import 'react-native-gesture-handler';
+// import 'react-native-gesture-handler';
 
 
 const screens = {

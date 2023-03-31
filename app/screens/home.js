@@ -8,7 +8,7 @@ import Search from './search';
 import Cart from './cart';
 import Favourites from './favourites';
 import colors from '../config/colors';
-import 'react-native-gesture-handler';
+// import 'react-native-gesture-handler';
 
 
 function home(props) {

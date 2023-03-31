@@ -1,8 +1,8 @@
 import * as React from 'react';
 import Navigator from "./routes/homeStack"
 import { useFonts } from "expo-font";
-import AppLoading from "expo-app-loading";  
-import 'react-native-gesture-handler';
+import AppLoading from "expo-app-loading"; 
+import 'react-native-gesture-handler'; 
 
 
 export default function App() {
@@ -12,16 +12,6 @@ export default function App() {
 
   if(!fontsLoaded){
     return <AppLoading />;
-  }
-
-  const pressHandler = ()=>{
-    navigation.navigate('Home')
-    //another method
-    // navigation.push('Home')
-
-
-    //to go back to the last page 
-    //navigation.goBack()
   }
   return (
           <Navigator />

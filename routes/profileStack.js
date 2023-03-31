@@ -4,7 +4,7 @@ import Profile from '../app/screens/profileScreen'
 import csProfileData from "../app/screens/csProfileData";
 import profileOrders from "../app/screens/profileOrders";
 import support from "../app/screens/support";
-import 'react-native-gesture-handler';
+// import 'react-native-gesture-handler';
  
 
 const screens = {   

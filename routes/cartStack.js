@@ -2,7 +2,7 @@ import { createStackNavigator } from "react-navigation-stack"
 import { createAppContainer } from "react-navigation"
 import Order from '../app/screens/order'
 import Cart from '../app/screens/cartScreen'
-import 'react-native-gesture-handler';
+// import 'react-native-gesture-handler';
 
 
 const screens = {   
