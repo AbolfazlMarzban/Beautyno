@@ -3,7 +3,7 @@ import Ionic from "react-native-vector-icons/Ionicons"
 import {NavigationContainer} from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from './homeScreen';
-import Profile from './Profile';
+import Profile from './profile';
 import Search from './search';  
 import Cart from './cart';
 import Favourites from './favourites';
