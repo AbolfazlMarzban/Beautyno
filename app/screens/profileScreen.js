@@ -17,16 +17,16 @@ function Profile({navigation}) {
         <SafeAreaView style={styles.profileBox}>
             <View width={'80%'}> 
               <TouchableOpacity style={styles.proTxtBox} onPress={ goToProfileData }> 
-                  <Text style={styles.proTxt}>تکمیل پروفایل</Text>
+                  <Text style={styles.proTxt}>profile info</Text>
               </TouchableOpacity>
               <TouchableOpacity style={styles.proOrdrBox} onPress={ goToProfileOrders }> 
-                  <Text style={styles.proOrdr}>سفارشات</Text>
+                  <Text style={styles.proOrdr}>manage orders</Text>
               </TouchableOpacity>
               <TouchableOpacity style={styles.proSuppBox} onPress = { goToSupport }>    
-                  <Text style={styles.proSupp}>پشتیبانی</Text>
+                  <Text style={styles.proSupp}>support</Text>
               </TouchableOpacity>
               <TouchableOpacity style={styles.proOutBox}> 
-                  <Text style={styles.proOut}>خروج</Text>
+                  <Text style={styles.proOut}>log out</Text>
               </TouchableOpacity>
             </View>
         </SafeAreaView>
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
   },
   proTxt:{
     fontFamily: 'YekanBakh-Regular',
-    fontSize: 25,
+    fontSize: 20,
     color: colors.blue,
     textAlign: 'center',
     textShadowColor: colors.blue,
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   },
   proOrdr:{
     fontFamily: 'YekanBakh-Regular',
-    fontSize: 25,
+    fontSize: 20,
     color: colors.pink,
     textAlign: 'center',
     textShadowColor: colors.pink,
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
   },
   proSupp:{
     fontFamily: 'YekanBakh-Regular',
-    fontSize: 25,
+    fontSize: 20,
     color: colors.yellow,
     textAlign: 'center',
     textShadowColor: colors.yellow,
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
   },  
   proOut:{
     fontFamily: 'YekanBakh-Regular',
-    fontSize: 25,
+    fontSize: 20,
     color: colors.purple,
     textAlign: 'center',
     textShadowColor: colors.purple,
@@ -86,28 +86,28 @@ const styles = StyleSheet.create({
     borderWidth: 2, 
     borderColor: colors.purple,
     borderRadius: 20,
-    paddingVertical: 20,
+    paddingVertical: 10,
     marginVertical: 20
   },
   proSuppBox:{
     borderWidth: 2, 
     borderColor: colors.yellow,
     borderRadius: 20,
-    paddingVertical: 20,
+    paddingVertical: 10,
     marginVertical: 20
   },
   proOrdrBox:{
     borderWidth: 2, 
     borderColor: colors.pink,
     borderRadius: 20,
-    paddingVertical: 20,
+    paddingVertical: 10,
     marginVertical: 20
   },
   proTxtBox: {
     borderWidth: 2, 
     borderColor: colors.blue,
     borderRadius: 20,
-    paddingVertical: 20,
+    paddingVertical: 10,
     marginVertical: 20
   }
 })

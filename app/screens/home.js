@@ -30,10 +30,11 @@ function home(props) {
                         } else if(route.name == "Favourites"){
                             iconName = focused ? "heart" : "heart-outline"
                         }
-                        return <Ionic name={iconName} size={size} color={colors.white} />
+                        return <Ionic name={iconName} size={35} color={colors.white} />
                     },
                     tabBarStyle: {
                         backgroundColor: '#000',
+                        height: 60
                       }
                 })}
                 tabBarOptions={{

@@ -29,20 +29,20 @@ export default function login({navigation}) {
       <Image resizeMode='contain' source={require("../assets/logo-no-background.png")} style={styles.Image}></Image>
       <TextInput 
                 style={styles.Input}
-                placeholder="شماره موبایل خود را وارد کنید"
+                placeholder="Enter your phone number"
                 keyboardType="numeric"
                 placeholderTextColor={colors.white}
         
       ></TextInput>
        <TextInput 
                 style={styles.Input}
-                placeholder="کد ارسال شده را وارد کنید"
+                placeholder="Enter the code"
                 keyboardType="numeric"
                 placeholderTextColor={colors.white}
         
       ></TextInput>
       <TouchableOpacity style={styles.Button} onPress={pressHandler}>
-        <Text style={{fontSize:23, textAlign: 'center', color: colors.white, fontFamily: 'YekanBakh-Regular'}}>ورود</Text>
+        <Text style={{fontSize:23, textAlign: 'center', color: colors.white, fontFamily: 'YekanBakh-Regular'}}>Sign in / Sign Up</Text>
       </TouchableOpacity>   
      
     </View>

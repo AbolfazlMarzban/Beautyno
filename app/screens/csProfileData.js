@@ -11,7 +11,7 @@ function csProfileData(props) {
     return (
        <View style={styles.body}>
             <Text style={{ color: colors.white, fontFamily:'YekanBakh-Regular', fontSize: 20, marginBottom: 10, marginTop: 30}}>
-                عکس پروفایل
+                profile Pic
             </Text>
             <TouchableOpacity style={styles.propick}>
             <Icon name={'plus-circle'} size={50} color={colors.white}  style={{ textShadowOffset:{width:1, height:1},
@@ -20,13 +20,13 @@ function csProfileData(props) {
                         elevation: 10,
                         textShadowRadius: 10}} />
             </TouchableOpacity>
-            <Text style={{ color: colors.white, fontFamily:'YekanBakh-Regular', fontSize: 20, marginBottom: 10,  marginTop: 30}}>کد ملی</Text>
+            {/* <Text style={{ color: colors.white, fontFamily:'YekanBakh-Regular', fontSize: 20, marginBottom: 10,  marginTop: 30}}>کد ملی</Text>
             <TextInput
                 style={styles.txtbox}
                 placeholder='کد ملی خود را وارد کنید'
                 placeholderTextColor={colors.white}
-            ></TextInput>
-            <Text style={{ color: colors.white, fontFamily:'YekanBakh-Regular', fontSize: 20, marginBottom: 10,  marginTop: 30}}>آدرس</Text>
+            ></TextInput> */}
+            <Text style={{ color: colors.white, fontFamily:'YekanBakh-Regular', fontSize: 20, marginBottom: 10,  marginTop: 30}}>Location</Text>
             {/* <Mapir
                apiKey={apiKey}
                 onRegionDidChange={(e) => onRegionDidChange(e)}

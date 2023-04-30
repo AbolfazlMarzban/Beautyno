@@ -2,33 +2,36 @@ import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 // import { TouchableOpacity } from 'react-native-gesture-handler';
 import colors from '../config/colors';
+import { ScrollView } from 'react-native-gesture-handler';
 
 function Order(props) {
     return (
        <View style={styles.orderBody}>
-            <View width = {'30%'} marginBottom={30}>
+        <ScrollView>
+            <View  marginBottom={30} style={{display: "flex",justifyContent: "center", alignItems: "center"}}>
                 <Image source={require('../assets/background.png')} resizeMode='cover' style={styles.profilePic}></Image>
             </View>
-            <View width={'80%'} paddingHorizontal={20}>
+            <View width={'100%'} paddingHorizontal={10}>
                 <View style={styles.nameBox}>
-                <Text style={styles.name}>اسم آرایشگاه</Text>
+                <Text style={styles.name}>salon name</Text>
                 </View>
                 <View style={styles.serviceBox}>
-                <Text style={styles.service}>اسم خدمت</Text>
+                <Text style={styles.service}>service name</Text>
                 </View>
                 <View style={styles.dateBox}>            
-                <Text style={styles.date}>روز و ساعت و تاریخ خدمت</Text>
+                <Text style={styles.date}>service date & time</Text>
                 </View>
                 <View style={styles.priceBox}>
-                <Text style={styles.priceRange}>بازه قیمتی</Text>
+                <Text style={styles.priceRange}>price range</Text>
                 </View>
                 <View style={styles.depositBox}>
-                <Text style={styles.deposit}>مبلغ ودیعه</Text>
+                <Text style={styles.deposit}>deposite</Text>
                 </View> 
             <TouchableOpacity style={styles.btnBox}>
-            <Text style={styles.checkOut}>پرداخت</Text>
+            <Text style={styles.checkOut}>pay</Text>
             </TouchableOpacity>
             </View>
+            </ScrollView>
        </View>
     );
 }
@@ -37,27 +40,26 @@ const styles = StyleSheet.create({
     orderBody:{
         backgroundColor: 'black',
         height: '100%',
-        direction: 'rtl',
+        // direction: 'rtl',
         flexDirection: 'column',
         paddingHorizontal: 20,
-        paddingVertical: 40,
+        paddingTop: 50,
         justifyContent: 'center',
         alignItems: 'center'
     },
     profilePic:{
-        width: '100%',
-        height: 160,
+        width: 100,
+        height: 100,
         borderRadius: 80,
         overflow: "hidden",
-        borderWidth: 3,
+        borderWidth: 1,
         borderColor: colors.yellow,
     },
     name:{
             color: colors.blue,
             fontFamily: 'YekanBakh-Regular',
-            fontSize: 25,
-            paddingRight: 20, 
-            padding: 15,
+            fontSize: 20,
+            paddingHorizontal: 20,
             textAlign: 'center',
             textShadowOffset: {width: 1 , height: 1},
             shadowOpacity: 0.5,
@@ -68,9 +70,8 @@ const styles = StyleSheet.create({
     service:{
         color: colors.pink,
         fontFamily: 'YekanBakh-Regular',
-        fontSize: 25,
-        paddingRight: 20, 
-        padding: 15,
+        fontSize: 20,
+        paddingHorizontal: 20,
         textAlign: 'center',
         textShadowOffset: {width: 1 , height: 1},
         shadowOpacity: 0.5,
@@ -81,9 +82,8 @@ const styles = StyleSheet.create({
     date:{
         color: colors.purple,
         fontFamily: 'YekanBakh-Regular',
-        fontSize: 25,
-        paddingRight: 20, 
-        padding: 15,
+        fontSize: 20,
+        paddingHorizontal: 20,
         textAlign: 'center',
         textShadowOffset: {width: 1 , height: 1},
         shadowOpacity: 0.5,
@@ -94,9 +94,8 @@ const styles = StyleSheet.create({
     priceRange:{
         color: colors.yellow,
         fontFamily: 'YekanBakh-Regular',
-        fontSize: 25,
-        paddingRight: 20, 
-        padding: 15,
+        fontSize: 20,
+        paddingHorizontal: 20,
         textAlign: 'center',
         textShadowOffset: {width: 1 , height: 1},
         shadowOpacity: 0.5,
@@ -107,9 +106,8 @@ const styles = StyleSheet.create({
     deposit:{
         color: colors.white,
         fontFamily: 'YekanBakh-Regular',
-        fontSize: 25,
-        paddingRight: 20, 
-        padding: 15,
+        fontSize: 20,
+        paddingHorizontal: 20,
         textAlign: 'center',
         textShadowOffset: {width: 1 , height: 1},
         shadowOpacity: 0.5,
@@ -120,46 +118,45 @@ const styles = StyleSheet.create({
     checkOut:{
         color: '#39FF14',
         fontFamily: 'YekanBakh-Regular',
-        fontSize: 22,
-        paddingRight: 20, 
-        padding: 15,
+        fontSize: 20,
+        paddingHorizontal: 20,
         textAlign: 'center',
         borderRadius:20,
         margin: 5,
     },
     nameBox:{
         borderColor: colors.blue,
-        borderWidth: 2,
+        borderWidth: 1,
         borderRadius: 20,
         margin:10,
     },
     serviceBox:{
         borderColor: colors.pink,
-        borderWidth: 2,
+        borderWidth: 1,
         borderRadius: 20,
         margin:10,
     },
     dateBox:{
         borderColor: colors.purple,
-        borderWidth: 2,
+        borderWidth: 1,
         borderRadius: 20,
         margin:10,
     },
     priceBox:{
         borderColor: colors.yellow,
-        borderWidth: 2,
+        borderWidth: 1,
         borderRadius: 20,
         margin:10,
     },
     depositBox:{
         borderColor: colors.white,
-        borderWidth: 2,
+        borderWidth: 1,
         borderRadius: 20,
         margin:10,
     },
     btnBox:{
         borderColor: '#39FF14',
-        borderWidth: 2,
+        borderWidth: 1,
         borderRadius: 20,
         marginTop: 100
     }

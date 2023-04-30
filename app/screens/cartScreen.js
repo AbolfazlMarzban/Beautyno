@@ -12,33 +12,33 @@ function Cart({navigation}) {
             <TouchableOpacity onPress={goToOrder}> 
             <View style={styles.orderBox}>
                 <View>
-                <Image source={require('../assets/background.png')} resizeMode='contain' style={styles.profilePic}></Image>
+                <Image source={require('../assets/background.png')} resizeMode='cover' style={styles.profilePic}></Image>
                 </View>
-                <View style={{display: 'flex', flexDirection: 'row-reverse', padding:30}}>
-                    <Text style={styles.name}>اسم آرایشگاه</Text>
-                    <Text style={styles.service}>اسم خدمت</Text>
-                </View>
-            </View>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={goToOrder}>
-            <View style={styles.orderBox}>
-                <View>
-                <Image source={require('../assets/background.png')} resizeMode='contain' style={styles.profilePic}></Image>
-                </View>
-                <View style={{display: 'flex', flexDirection: 'row-reverse', padding:30}}>
-                    <Text style={styles.name}>اسم آرایشگاه</Text>
-                    <Text style={styles.service}>اسم خدمت</Text>
+                <View style={{display: 'flex', flexDirection: 'row-reverse', padding:15}}>
+                    <Text style={styles.name}>salon name</Text>
+                    <Text style={styles.service}>service name</Text>
                 </View>
             </View>
             </TouchableOpacity>
-            <TouchableOpacity onPress={goToOrder}>
+            <TouchableOpacity onPress={goToOrder}> 
             <View style={styles.orderBox}>
                 <View>
-                <Image source={require('../assets/background.png')} resizeMode='contain' style={styles.profilePic}></Image>
+                <Image source={require('../assets/background.png')} resizeMode='cover' style={styles.profilePic}></Image>
                 </View>
-                <View style={{display: 'flex', flexDirection: 'row-reverse', padding:30}}>
-                    <Text style={styles.name}>اسم آرایشگاه</Text>
-                    <Text style={styles.service}>اسم خدمت</Text>
+                <View style={{display: 'flex', flexDirection: 'row-reverse', padding:15}}>
+                    <Text style={styles.name}>salon name</Text>
+                    <Text style={styles.service}>service name</Text>
+                </View>
+            </View>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={goToOrder}> 
+            <View style={styles.orderBox}>
+                <View>
+                <Image source={require('../assets/background.png')} resizeMode='cover' style={styles.profilePic}></Image>
+                </View>
+                <View style={{display: 'flex', flexDirection: 'row-reverse', padding:15}}>
+                    <Text style={styles.name}>salon name</Text>
+                    <Text style={styles.service}>service name</Text>
                 </View>
             </View>
             </TouchableOpacity>
@@ -50,12 +50,13 @@ const styles = StyleSheet.create({
     cart: {
         backgroundColor: 'black',
         height: '100%', 
-        padding: 20
+        padding: 10,
+        paddingTop: 50
     },
     name:{
         color: 'white',
             fontFamily: 'YekanBakh-Regular',
-            fontSize: 22,
+            fontSize: 15,
             paddingRight: 20, 
             flex: 0.45,
             padding: 10,
@@ -67,7 +68,7 @@ const styles = StyleSheet.create({
     service:{
         color: 'white',
             fontFamily: 'YekanBakh-Regular',
-            fontSize: 22,
+            fontSize: 15,
             paddingRight: 20, 
             flex: 0.45,
             padding: 10,
@@ -78,12 +79,12 @@ const styles = StyleSheet.create({
 
     },
     orderBox:{
-        borderWidth: 3,
+        borderWidth: 1,
         borderColor: colors.purple,
         backgroundColor:colors.black,
         borderRadius: 20,
-        paddingHorizontal: 20,
-        margin: 20,
+        paddingHorizontal: 10,
+        margin: 5,
         elevation: 30,
         shadowColor: colors.purple,
         shadowOpacity: 0.9,
@@ -95,8 +96,8 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     profilePic:{
-        width: 100,
-        height: 100,
+        width: 60,
+        height: 60,
         borderRadius: 150 / 2,
         overflow: "hidden",
         borderWidth: 3,
