@@ -26,7 +26,7 @@ function HomeScreen(props) {
             <View>
                     <View style={styles.picBox}>
                         <View style={styles.profile}>
-                            <Image source={require('../assets/background.png')} resizeMode='contain' style={styles.profilePic}></Image>
+                            <Image source={require('../assets/background.png')} resizeMode='cover' style={styles.profilePic}></Image>
                         </View>
                         <View >
                             <Text style={styles.profileText}>Salon name</Text>
@@ -36,12 +36,12 @@ function HomeScreen(props) {
                             rating={3}
                             fullStarColor={colors.yellow}
                             starSize={15}
-                            starStyle={{ paddingRight: 10}}
+                            starStyle={{ paddingLeft: 10}}
                             />
                         </View>
                     </View>
                     <Image source={require('../assets/modern-beauty-salon-interior.jpg')} 
-                     style={{  width: '100%', height: 360, resizeMode: 'contain', borderRadius: 20 , marginTop: 20}}></Image>
+                     style={{  width: '100%', height: 300, resizeMode: 'cover' , marginTop: 10}}></Image>
                      <View style={{display: 'flex', flexDirection:'row', marginTop: 10}}>
                         <TouchableOpacity>
                         <Icon name={'heart-outline'} size={35} color={colors.pink}  style={{ textShadowOffset:{width:1, height:1},
@@ -68,22 +68,22 @@ function HomeScreen(props) {
             <View>
                     <View style={styles.picBox}>
                         <View style={styles.profile}>
-                            <Image source={require('../assets/background.png')} resizeMode='contain' style={styles.profilePic}></Image>
+                            <Image source={require('../assets/background.png')} resizeMode='cover' style={styles.profilePic}></Image>
                         </View>
                         <View >
-                            <Text style={styles.profileText}>salon name</Text>
+                            <Text style={styles.profileText}>Salon name</Text>
                             <StarRating
                             disabled={true}
                             maxStars={5}
                             rating={3}
                             fullStarColor={colors.yellow}
                             starSize={15}
-                            starStyle={{ paddingRight: 10}}
+                            starStyle={{ paddingLeft: 10}}
                             />
                         </View>
                     </View>
                     <Image source={require('../assets/modern-beauty-salon-interior.jpg')} 
-                     style={{  width: '100%', height: 360, resizeMode: 'contain', borderRadius: 20 , marginTop: 20}}></Image>
+                     style={{  width: '100%', height: 300, resizeMode: 'cover' , marginTop: 10}}></Image>
                      <View style={{display: 'flex', flexDirection:'row', marginTop: 10}}>
                         <TouchableOpacity>
                         <Icon name={'heart-outline'} size={35} color={colors.pink}  style={{ textShadowOffset:{width:1, height:1},
@@ -103,7 +103,49 @@ function HomeScreen(props) {
                         </TouchableOpacity>
                      </View>
                      <ScrollView style={{ width: '100%', marginTop: 10, height: 100 }}>
-                     <Text style={styles.commentUser}>user : </Text>
+                        <Text style={styles.commentUser}>user : </Text>
+                        <Text style={styles.comment}>user comment</Text>
+                     </ScrollView>
+            </View>
+            <View>
+                    <View style={styles.picBox}>
+                        <View style={styles.profile}>
+                            <Image source={require('../assets/background.png')} resizeMode='cover' style={styles.profilePic}></Image>
+                        </View>
+                        <View >
+                            <Text style={styles.profileText}>Salon name</Text>
+                            <StarRating
+                            disabled={true}
+                            maxStars={5}
+                            rating={3}
+                            fullStarColor={colors.yellow}
+                            starSize={15}
+                            starStyle={{ paddingLeft: 10}}
+                            />
+                        </View>
+                    </View>
+                    <Image source={require('../assets/modern-beauty-salon-interior.jpg')} 
+                     style={{  width: '100%', height: 300, resizeMode: 'cover' , marginTop: 10}}></Image>
+                     <View style={{display: 'flex', flexDirection:'row', marginTop: 10}}>
+                        <TouchableOpacity>
+                        <Icon name={'heart-outline'} size={35} color={colors.pink}  style={{ textShadowOffset:{width:1, height:1},
+                        textShadowColor: colors.purple,
+                        shadowOpacity: 2,
+                        elevation: 10,
+                        textShadowRadius: 10,
+                        marginRight: 5}} />
+                        
+                        </TouchableOpacity>
+                        <TouchableOpacity>
+                        <Icon name={'comment-outline'} size={35} color={colors.blue}  style={{ textShadowOffset:{width:1, height:1},
+                        textShadowColor: colors.blue,
+                        shadowOpacity: 2,
+                        elevation: 10,
+                        textShadowRadius: 10}} />
+                        </TouchableOpacity>
+                     </View>
+                     <ScrollView style={{ width: '100%', marginTop: 10, height: 100 }}>
+                        <Text style={styles.commentUser}>user : </Text>
                         <Text style={styles.comment}>user comment</Text>
                      </ScrollView>
             </View>
@@ -116,7 +158,8 @@ const styles = StyleSheet.create({
     screen:{
         backgroundColor: 'black',
         height:'100%',
-        padding: 20
+        padding: 20,
+        paddingTop: 50
     },
     text:{
         color: 'white',
@@ -124,15 +167,15 @@ const styles = StyleSheet.create({
 
     },
     picBox:{
-        alignItems: 'flex-end',
+        alignItems: 'flex-start',
         height: 'auto',
         display: 'flex',
-        flexDirection: 'row-reverse',
+        flexDirection: 'row',
         alignItems: 'center'
     },
     profile:{
-        width: 80,
-        height: 80,
+        width: 50,
+        height: 50,
         borderRadius: 80,
         shadowColor: colors.blue,
         shadowOffset: {width: 5, height: 1},
@@ -143,8 +186,8 @@ const styles = StyleSheet.create({
         backgroundColor: colors.purple
     },
     profilePic:{
-        width: 80,
-        height: 80,
+        width: 50,
+        height: 50,
         borderRadius: 150 / 2,
         overflow: "hidden",
         borderWidth: 3,
@@ -152,10 +195,10 @@ const styles = StyleSheet.create({
 
     },
     profileText:{
-        fontSize: 22,
+        fontSize: 20,
         color: colors.white,
         fontFamily: 'YekanBakh-Regular',
-        paddingRight: 10
+        paddingLeft: 10
     },
     commentUser: {
         color: colors.white,
